@@ -1,1 +1,103 @@
-/* место для вашего кода */
+/* 
+
+    Шрифт: Raleway 700  400
+    letter-spacing: 0%  30%
+    font-size: nav, address - 18px,  texts - 20px,  h2, button-text- 22px, h1 - 100px
+    padding-lr: 50px/50px   40px
+    padding-tb: 165px/50px
+    margin-lr: 24px/24px
+    margin-b: 180px 120px
+    text-color: #FFF   #000
+
+*/
+
+.header {
+    display: grid;
+    padding: 90px 50px;
+    min-height: 290px;
+    grid-template-columns: 1fr min-content 1fr;
+    align-items: center;
+    font-size: 18px;
+}
+
+.menu-list {
+    display: flex;
+    gap: 32px;
+    list-style: circle;
+}
+
+.menu-item__active {
+    text-decoration: none;
+}
+
+ .header .logo-image  {
+    width: 130px;
+    height: 105px;
+}
+
+.address {
+    margin: 0;
+    padding: 0;
+    max-width: 240px;
+    font-style: normal;
+    justify-self: end;
+    line-height: 24.3px;
+}
+/* Исправить подчеркивание в номере */
+
+
+.cover {
+    padding: 0 50px 50px;
+    margin: 0 0 180px;
+    background-image: url(/images/cover.jpg);
+    background-size: cover;
+    min-height: 760px;
+}
+
+.lots {
+    padding: 0 0 50px;
+    margin:  0 24px 120px;
+    min-height: 720px;
+}
+
+.lot {
+    height: 596px;
+    width: 334px;
+    background-size: cover;
+    background-position: center;
+}
+
+.first-lot {
+    background-image: url(/images/card-lot-01.jpg);
+}
+
+.second-lot {
+    background-image: url(/images/card-lot-02.jpg)
+}
+
+.third-lot {
+    background-image: url(/images/card-lot-03.jpg)
+}
+
+.about {
+    display: grid;
+    margin: 0 24px 180px;
+    min-height: 559px;
+}
+
+.about .logo-image {
+    width: 240px;
+    height: 240px;
+    background-color: #000;
+    background-image: url(/images/logo-white.svg);
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: center;
+    border-radius: 240px;
+}
+
+.footer {
+    padding: 0 50px;
+    min-height: 180px;
+}
+
