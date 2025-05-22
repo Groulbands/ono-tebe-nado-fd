@@ -48,7 +48,7 @@
   font-size: 18px;
   font-style: normal;
   justify-self: end;
-  line-height: 24.3px;
+  line-height: 135%;
 }
 
 .cover {
@@ -65,7 +65,7 @@
   font-size: 100px;
   font-weight: 700;
   text-transform: uppercase;
-  line-height: 115px;
+  line-height: 115%;
   letter-spacing: calc(100px * 0.3);
 }
 
@@ -91,7 +91,7 @@
 
 .subtitle {
   font-size: 22px;
-  line-height: 28px;
+  line-height: 127%;
   font-weight: 400;
   text-transform: uppercase;
   word-spacing: 18.5px;
@@ -237,7 +237,7 @@
 .about__text {
   font-weight: 400;
   font-size: 20px;
-  line-height: 24px;
+  line-height: 120%;
 }
 
 .about__text-first {
