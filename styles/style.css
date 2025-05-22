@@ -14,7 +14,6 @@
 .header {
   display: grid;
   padding: 90px 50px;
-  min-height: 293px;
   grid-template-columns: 1fr min-content 1fr;
   align-items: center;
 }
@@ -27,8 +26,8 @@
 }
 
 .underlined-text {
-  text-decoration: none;
-  border-bottom: 1px solid;
+  text-decoration: underline;
+  text-underline-position: under;
 }
 
 .menu-item-active {
@@ -54,14 +53,15 @@
 .cover {
   position: relative;
   padding: 165px 50px 50px;
-  margin: 0 0 180px;
-  min-height: 757px;
+  margin: 0 0 189px;
+  background-image: url(../images/cover.jpg);
+  background-size: cover;
+  background-position: center;
   color: #fff;
+  z-index: -2;
 }
 
 .cover-title {
-  display: grid;
-  min-height: 385px;
   font-size: 100px;
   font-weight: 700;
   text-transform: uppercase;
@@ -74,13 +74,13 @@
 }
 
 .text-align__center {
-  text-indent: 4%;
-  place-self: center;
+  margin: 23px -30px 0 0;
+  text-align: center;
 }
 
 .text-align__end {
-  text-indent: 7.5%;
-  place-self: end;
+  margin: 20px -30px 0 0;
+  text-align: end;
 }
 
 .cover-description {
@@ -99,8 +99,8 @@
 }
 
 .bet-button {
+  padding: 13px 0 14px 0;
   width: 256px;
-  height: 51px;
   background: transparent;
   font-size: 22px;
   font-weight: 500;
@@ -111,27 +111,17 @@
   color: #fff;
 }
 
-.cover-image {
-  position: absolute;
-  object-fit: cover;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -2;
-}
-
 .overlay {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: rgb(0 0 0 / 0.5);
+  background-color: rgb(0 0 0 / 0.6);
   inset: 0;
   z-index: -1;
 }
 
 .lots {
   margin: 0 24px 120px;
-  min-height: 723px;
 }
 
 .section__title {
@@ -149,8 +139,6 @@
 
 .lot {
   position: relative;
-  display: grid;
-  align-content: space-between;
   margin: 27px 0 32px;
   width: 334px;
   min-height: 596px;
@@ -159,11 +147,21 @@
   background-position: center;
   list-style: none;
   color: #fff;
+  z-index: -2;
 }
 
-.lot a,
+.card-link {
+  text-decoration: none;
+}
+
+.card-link,
 .lot article {
   height: 100%;
+}
+
+.lot article {
+    display: grid;
+    align-content: space-between;
 }
 
 .lot-title {
@@ -180,19 +178,16 @@
   line-height: 120%;
 }
 
-.first-lot {
+.film-lot {
   background-image: url(../images/card-lot-01.jpg);
-  z-index: -2;
 }
 
-.second-lot {
+.book-lot {
   background-image: url(../images/card-lot-02.jpg);
-  z-index: -2;
 }
 
-.third-lot {
+.picture-lot {
   background-image: url(../images/card-lot-03.jpg);
-  z-index: -2;
 }
 
 .lots .section__title,
@@ -212,7 +207,6 @@
   gap: 72px;
   padding: 35px 0 0 47px;
   margin: 0 24px 180px;
-  min-height: 595px;
 }
 
 .about__logo-image {
@@ -223,7 +217,7 @@
   background-repeat: no-repeat;
   background-size: 60%;
   background-position: center;
-  border-radius: 240px;
+  border-radius: 50%;
 }
 
 .about__column-text {
@@ -231,7 +225,7 @@
 }
 
 .about .section__title {
-  margin-bottom: 100px;
+  margin-bottom: 106px;
 }
 
 .about__text {
@@ -240,8 +234,8 @@
   line-height: 120%;
 }
 
-.about__text-first {
-  margin-bottom: 30px;
+.paragraph-space {
+  margin-bottom: 24px;
   width: 688px;
 }
 
@@ -249,7 +243,6 @@
   display: grid;
   padding: 0 50px;
   grid-template-columns: repeat(3, 1fr);
-  min-height: 180px;
 }
 
 .footer .address {
@@ -273,6 +266,9 @@
   display: flex;
   justify-self: end;
   gap: 48px;
-  width: 240px;
   list-style: none;
+}
+
+.media-link-logo {
+  width: 48px;
 }
